@@ -41,13 +41,13 @@ export function Sidebar() {
       alt: 'Mensajes',
       link: '/mensajes',
     },
-    {
+    /*{
       name: 'Notificaciones',
       icon: '/icons/SideBarIcons/notificaciones.svg',
       activeIcon: '/icons/SideBarIcons/notificaciones_active.svg',
       alt: 'Notificaciones',
       link: '/notificaciones',
-    },
+    },*/
     {
       name: 'Crear',
       icon: '/icons/SideBarIcons/crear.svg',
