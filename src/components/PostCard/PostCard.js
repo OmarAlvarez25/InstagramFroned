@@ -133,13 +133,13 @@ export const PostCard = ({ post }) => {
               height={44}
               className={s.card__footer__actions__icon}
             />
-            <Image
+            {/*<Image
               src="/icons/globals/enviar.svg"
               alt="Send"
               width={44}
               height={44}
               className={s.card__footer__actions__icon}
-            />
+            />*/}
           </div>
 
           <div className={s.card__footer__actions__secondary}>
