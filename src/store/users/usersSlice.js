@@ -36,7 +36,6 @@ export const usersSlice = createSlice({
 });
 
 export const {
-  onDeletePost,
   onLoadUsers,
   onLogOutUsers,
   onSetActiveUser,
