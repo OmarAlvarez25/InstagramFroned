@@ -1,0 +1,35 @@
+@import '@/styles/_media_queries.scss';
+
+.createChatModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  box-shadow: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 400px;
+  height: fit-content;
+  border-radius: var(--border-radius);
+  transition: var(--main-transition);
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--white);
+    transition: var(--main-transition);
+  }
+
+  &__form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,160 @@
+@import '../../styles/_media_queries.scss';
+
+// instagram card
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid var(--separator-color);
+  border-radius: 12px;
+  background-color: var(--color-primary);
+  transition: var(--main-transition);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    font-size: 0.875rem;
+    min-height: 56px;
+    max-height: 56px;
+    padding: 8px 10px;
+    transition: var(--main-transition);
+  }
+
+  &__image {
+    width: 468px;
+    height: 468px;
+    transition: var(--main-transition);
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    @include tablet {
+      width: auto;
+      height: auto;
+      min-height: 286px;
+    }
+  }
+
+  &__footer {
+    margin-top: 6px;
+    padding: 0 12px 6px 12px;
+    width: 100%;
+    transition: var(--main-transition);
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 40px;
+      max-height: 40px;
+      width: 100%;
+      transition: var(--main-transition);
+
+      &__main {
+        display: flex;
+        align-items: center;
+        transition: var(--main-transition);
+      }
+
+      &__viewComments {
+        cursor: pointer;
+        padding-left: 8px;
+        margin-bottom: 8px;
+        font-size: 0.875rem;
+        color: #a8a8a8;
+        transition: var(--main-transition);
+      }
+
+      &__icon {
+        cursor: pointer;
+        padding: 8px;
+
+        &__save {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 8px 0px 8px 8px;
+        }
+      }
+
+      &__likes {
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        margin-bottom: 8px;
+        font-size: 0.875rem;
+        transition: var(--main-transition);
+      }
+
+      &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding-left: 8px;
+        font-size: 0.875rem;
+        margin-bottom: 12px;
+        transition: var(--main-transition);
+      }
+
+      &__comments {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 8px;
+        font-size: 0.875rem;
+        transition: var(--main-transition);
+
+        &__item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          font-size: 0.875rem;
+          margin-bottom: 6px;
+          padding-right: 8px;
+          transition: var(--main-transition);
+        }
+      }
+
+      &__addComment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.875rem;
+        margin: 6px 0;
+        padding-right: 8px;
+        gap: 10px;
+        transition: var(--main-transition);
+
+        &__input {
+          height: 35px;
+          width: 100%;
+          background-color: transparent;
+          border: 0;
+          color: var(--white);
+          font-size: 0.875rem;
+          width: 100%;
+          border: 1px solid var(--separator-color);
+          transition: var(--main-transition);
+          transition: var(--main-transition);
+        }
+
+        &__button {
+          font-size: 0.875rem;
+          padding: 8px 1rem;
+          background-color: transparent;
+          color: var(--white);
+          border: 1px solid var(--separator-color);
+          transition: var(--main-transition);
+        }
+      }
+    }
+  }
+}

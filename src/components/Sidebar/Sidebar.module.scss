@@ -1,0 +1,119 @@
+@import '../../styles/_media_queries.scss';
+
+.sidebar {
+  background-color: var(--color-primary);
+  border-right: 1px solid var(--separator-color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  max-width: 244px;
+  width: 100%;
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transition: var(--main-transition);
+
+  @include mediaquery(1200px) {
+    min-width: 74px;
+    max-width: 74px;
+    transition: var(--main-transition);
+  }
+
+  &__logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 25px 12px 16px 12px;
+    max-height: 73px;
+    margin-bottom: 1.1875rem;
+    height: 100%;
+    width: 100%;
+    transition: var(--main-transition);
+
+    @include mediaquery(1200px) {
+      display: none;
+    }
+
+    &__short {
+      cursor: pointer;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12px;
+      padding-bottom: 23px;
+      width: 100%;
+      transition: var(--main-transition);
+
+      @include mediaquery(1200px) {
+        display: flex;
+      }
+
+      &__img {
+        padding: 12px;
+        margin: 4px 0;
+        height: 100%;
+        transition: var(--main-transition);
+      }
+    }
+  }
+
+  &__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    transition: var(--main-transition);
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      margin: 4px;
+      width: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--main-transition);
+
+      &:hover {
+        background-color: var(--color-secondary);
+        transition: var(--main-transition);
+      }
+
+      &__li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: var(--border-radius);
+        transition: var(--main-transition);
+
+        &__p {
+          margin-left: 1rem;
+          font-size: 1rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1.875rem;
+    transition: var(--main-transition);
+  }
+
+  @include tablet {
+    display: none;
+    transition: var(--main-transition);
+  }
+}

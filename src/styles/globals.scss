@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-primary: #000;
+  --color-secondary: #121212;
+
+  --color-font: #fff;
+
+  --separator-color: #383838;
+
+  --font-family: 'Inter', sans-serif;
+
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea;
+  --accents-3: #999;
+  --accents-4: #888;
+  --accents-5: #666;
+  --accents-6: #444;
+  --accents-7: #333;
+  --accents-8: #111;
+
+  --white: #fff;
+  --black: #000;
+
+  --border-radius: 10px;
+
+  --main-transition: all 0.3s ease-out;
+
+  --scrollbarBG: #7b7b7b;
+  --thumbBG: #424242;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body {
+  color: var(--color-font);
+  background: var(--color-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

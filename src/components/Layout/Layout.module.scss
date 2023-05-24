@@ -1,0 +1,28 @@
+@import '../../styles/_media_queries.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  // height: 100vh;
+  margin-left: auto;
+  overflow-x: hidden;
+  transition: var(--main-transition);
+
+  @include container(1201px, 2500px) {
+    max-width: calc(100% - 244px);
+  }
+
+  @include container(768px, 1200px) {
+    max-width: calc(100% - 71px);
+  }
+
+  @include midDeskTablet {
+    padding: 1rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
